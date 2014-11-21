@@ -37,7 +37,7 @@
 
 - (NSURLCredential *)credentialWithIdentity:(SecIdentityRef)identity certificates:(NSArray *)certArray persistence:(NSURLCredentialPersistence)persistence {
 
-  NSString *certPath = [[NSBundle mainBundle] pathForResource:@"RoviSys" ofType:@"pfx"];
+  NSString *certPath = [[NSBundle mainBundle] pathForResource:@"YourCertFile" ofType:@"pfx"];
   NSData *certData   = [[NSData alloc] initWithContentsOfFile:certPath];
 
   SecIdentityRef myIdentity;  // ???
